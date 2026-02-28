@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potopia | Turning Agricultural Waste Into Wonder</title>
+    <meta name="description"
+        content="Egypt's first zero-waste agricultural ecosystem. We protect crops, empower farmers, and create premium consumer goods from agricultural byproducts.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Scripts -->
+    <script src="assets/js/analytics.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+
+    <!-- Plausible is loaded via analytics.js -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/logo.png" alt="Potopia Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about/index.html" class="nav-link">About Us</a></li>
+                <li><a href="products/index.html" class="nav-link">Products</a></li>
+                <li><a href="circular-economy/index.html" class="nav-link">Circular Economy</a></li>
+                <li><a href="farmers/index.html" class="nav-link">Farmers Portal</a></li>
+                <li><a href="contact/index.html" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="cart/index.html" class="nav-link cart-icon-wrapper">
+                        <!-- Custom SVG Cart Icon -->
+                        <svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero"
+        style="background: linear-gradient(rgba(104, 71, 48, 0.8), rgba(167, 35, 35, 0.8)), url('assets/images/team/real-team.png') center/cover; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--text-light); padding-top: 80px;">
+        <div class="container fade-in">
+            <h1 style="color: var(--neutral-white); font-size: 3.5rem; margin-bottom: 20px;">Turning Agricultural Waste
+                Into Wonder</h1>
+            <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 40px; font-weight: 500;">Egypt's first
+                zero-waste agricultural ecosystem — protecting crops, empowering farmers, and creating premium goods
+                from nature's byproducts.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="#products-showcase" class="btn btn-primary">Explore Our Solutions</a>
+                <a href="farmers/index.html" class="btn btn-secondary">Join 3,200+ Farmers</a>
+            </div>
+            <div
+                style="margin-top: 50px; display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; font-family: var(--font-heading); font-size: 0.9rem; font-weight: 600; opacity: 0.9;">
+                <span>EU Organic Compliant</span>
+                <span>•</span>
+                <span>Export Certified</span>
+                <span>•</span>
+                <span>Zero Waste Verified</span>
+                <span>•</span>
+                <span>Made in Egypt</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Partners Section -->
+    <section class="section section-bg-light text-center">
+        <div class="container fade-in">
+            <h2>Trusted By Industry Leaders</h2>
+            <div
+                style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin-top: 40px; opacity: 0.6; align-items: center;">
+                <div style="font-weight: 700; font-size: 1.2rem;">Ministry of Agriculture</div>
+                <div style="font-weight: 700; font-size: 1.2rem;">EU Organic (EC 834/2007)</div>
+                <div style="font-weight: 700; font-size: 1.2rem;">GlobalGAP</div>
+                <div style="font-weight: 700; font-size: 1.2rem;">Egyptian Agricultural Bank</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Ecosystem Showcase -->
+    <section id="products-showcase" class="section">
+        <div class="container fade-in">
+            <div class="text-center mb-3">
+                <h2>Our Circular Product Family</h2>
+                <p>Every solution connects to another. Every purchase supports Egyptian agriculture.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <span class="product-category-badge badge-green">Agricultural</span>
+                    <div class="product-image-wrapper">
+                        <img src="assets/images/products/bio-fungicide.jpeg" alt="Bio-Fungicide">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">Bio-Fungicide</h3>
+                        <p class="product-tagline">"Protect Your Harvest Naturally"</p>
+                        <a href="products/bio-fungicide.html" class="btn btn-outline"
+                            style="margin-top: auto; align-self: flex-start;">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" style="border-top: 3px solid var(--secondary-gold);">
+                    <span class="product-category-badge badge-gold">Home Care</span>
+                    <div class="product-image-wrapper">
+                        <img src="assets/images/products/eco-clean-soap.jpeg" alt="Eco-Clean Soap">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">Eco-Clean Soap</h3>
+                        <p class="product-tagline">"Clean Home, Clean Conscience"</p>
+                        <a href="products/eco-clean-soap.html" class="btn btn-outline"
+                            style="margin-top: auto; align-self: flex-start; border-color: var(--secondary-gold); color: var(--secondary-gold);">Learn
+                            More</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <span class="product-category-badge badge-green">Agricultural</span>
+                    <div class="product-image-wrapper">
+                        <img src="assets/images/products/amp-f-containers.jpeg" alt="AMP F Containers">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">AMP F Hub</h3>
+                        <p class="product-tagline">"Smart Storage, Zero Loss"</p>
+                        <a href="products/amp-f-containers.html" class="btn btn-outline"
+                            style="margin-top: auto; align-self: flex-start;">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" style="border-top: 3px solid var(--secondary-gold);">
+                    <span class="product-category-badge badge-gold">Premium Beauty</span>
+                    <div class="product-image-wrapper">
+                        <img src="assets/images/products/botanical-skincare.jpeg" alt="Botanical Skincare">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-title">Botanical Skincare</h3>
+                        <p class="product-tagline">"Farm-to-Face Luxury"</p>
+                        <a href="products/botanical-skincare.html" class="btn btn-outline"
+                            style="margin-top: auto; align-self: flex-start; border-color: var(--secondary-gold); color: var(--secondary-gold);">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section section-bg-dark">
+        <div class="container fade-in">
+            <div class="text-center mb-3">
+                <h2>Proven Results, Lasting Relationships</h2>
+                <p>Based on 2024 customer data and third-party agricultural impact assessment</p>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center; margin-top: 40px;">
+                <div>
+                    <div
+                        style="font-size: 3rem; font-family: var(--font-heading); font-weight: 700; color: var(--secondary-gold);">
+                        3,200+</div>
+                    <p style="font-weight: 500;">Farmers Served Across Egypt</p>
+                </div>
+                <div>
+                    <div
+                        style="font-size: 3rem; font-family: var(--font-heading); font-weight: 700; color: var(--secondary-gold);">
+                        87%</div>
+                    <p style="font-weight: 500;">Customer Return Rate</p>
+                </div>
+                <div>
+                    <div
+                        style="font-size: 3rem; font-family: var(--font-heading); font-weight: 700; color: var(--secondary-gold);">
+                        6,000+</div>
+                    <p style="font-weight: 500;">Tons Waste Upcycled Annually</p>
+                </div>
+                <div>
+                    <div
+                        style="font-size: 3rem; font-family: var(--font-heading); font-weight: 700; color: var(--secondary-gold);">
+                        28.6%</div>
+                    <p style="font-weight: 500;">Farmer Margin Improvement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel Section -->
+    <section class="section">
+        <div class="container fade-in">
+            <div class="text-center mb-3">
+                <h2>Success Stories from the Field</h2>
+                <p>Hear from the farmers, cooperatives, and businesses transforming their operations.</p>
+            </div>
+
+            <div
+                style="display: flex; gap: 30px; overflow-x: auto; padding-bottom: 20px; scroll-snap-type: x mandatory;">
+                <!-- Testimonial 1 -->
+                <div
+                    style="flex: 0 0 350px; background: var(--bg-subtle); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); scroll-snap-align: start; display: flex; flex-direction: column;">
+                    <div style="color: var(--secondary-gold); font-size: 1.5rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; margin-bottom: 20px; flex-grow: 1;">"والله يا ابني المحصول زاد والندوة
+                        البدرية مبقاش ليها أثر، منتجكم ده مبروك وموفر علينا مبيدات بالشيء الفلاني، ربنا يباركلكم."</p>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">الحاج عبد التواب</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">مزارع بطاطس، المنوفية</p>
+                        <span
+                            style="display: inline-block; background: var(--primary-green); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; margin-top: 10px; font-weight: 600;">50
+                            Feddans</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div
+                    style="flex: 0 0 350px; background: var(--bg-subtle); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); scroll-snap-align: start; display: flex; flex-direction: column;">
+                    <div style="color: var(--secondary-gold); font-size: 1.5rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; margin-bottom: 20px; flex-grow: 1;">"الصناديق بتاعتكم دي اختراع بجد!
+                        البطاطس بتفضل سليمة ومش بتعفن زي الأول، وفرتلي هدر كتير كنت بخسره كل زرعة."</p>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">عم محمود</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">تاجر ومزارع، السادات</p>
+                        <span
+                            style="display: inline-block; background: var(--primary-green); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; margin-top: 10px; font-weight: 600;">85%
+                            Loss Reduction</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div
+                    style="flex: 0 0 350px; background: var(--bg-subtle); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); scroll-snap-align: start; display: flex; flex-direction: column;">
+                    <div style="color: var(--secondary-gold); font-size: 1.5rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; margin-bottom: 20px; flex-grow: 1;">"صابون المواعين اللي بتعملوه من
+                        القشر ده ممتاز ومبينشفش الإيد وبينضف أحسن من الغالي، تسلم إيديكم."</p>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">أم أحمد</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">ربة منزل</p>
+                        <span
+                            style="display: inline-block; background: var(--secondary-gold); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; margin-top: 10px; font-weight: 600;">B2B
+                            Customer</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div
+                    style="flex: 0 0 350px; background: var(--bg-subtle); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); scroll-snap-align: start; display: flex; flex-direction: column;">
+                    <div style="color: var(--secondary-gold); font-size: 1.5rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; margin-bottom: 20px; flex-grow: 1;">"Cross-subsidization made the
+                        bio-fungicide affordable for my 5 feddans. Potopia understands small farmers. I'm now expanding
+                        to 10 feddans with confidence."</p>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Mahmoud Ibrahim</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Smallholder farmer, Bagour</p>
+                        <span
+                            style="display: inline-block; background: var(--primary-green); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; margin-top: 10px; font-weight: 600;">100%
+                            Expansion</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div
+                    style="flex: 0 0 350px; background: var(--bg-subtle); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); scroll-snap-align: start; display: flex; flex-direction: column;">
+                    <div style="color: var(--secondary-gold); font-size: 1.5rem; margin-bottom: 15px;">★★★★★</div>
+                    <p style="font-style: italic; margin-bottom: 20px; flex-grow: 1;">"Potopia's circular model is
+                        textbook circular economy implementation. They're not just selling products; they're redesigning
+                        agricultural systems."</p>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Dr. Yasmine Fouad</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Sustainability consultant</p>
+                        <span
+                            style="display: inline-block; background: var(--deep-forest); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; margin-top: 10px; font-weight: 600;">Industry
+                            Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Circular Economy Preview -->
+    <section class="section section-bg-light text-center">
+        <div class="container fade-in">
+            <h2>Zero Waste, Infinite Value</h2>
+            <p class="mb-2" style="max-width: 600px; margin-left: auto; margin-right: auto;">Our closed-loop model turns
+                agricultural downtime and waste into revenue-generating, impactful assets.</p>
+            <a href="circular-economy/index.html" class="btn btn-primary">See Our Full Process</a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section"
+        style="background-color: var(--accent-sage); color: var(--text-light); text-align: center;">
+        <div class="container fade-in">
+            <h2 style="color: var(--neutral-white);">Join the Agricultural Revolution</h2>
+            <p class="mb-2">Get farming tips, product updates, and exclusive offers for eco-conscious consumers.</p>
+
+            <form action="#" method="POST" style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
+                <input type="email" placeholder="Enter your email" class="form-control" required style="flex-grow: 1;">
+                <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+            <p style="font-size: 0.8rem; margin-top: 15px; opacity: 0.8;">Get 10% off your first Eco-Clean order. We
+                respect your privacy.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="navbar-brand" style="color: var(--neutral-white); margin-bottom: 20px;">
+                        <img src="assets/images/logo.png" alt="Potopia Logo" style="filter: brightness(0) invert(1);">
+                    </a>
+                    <p>From Soil to Solution — A Zero-Waste Agricultural Utopia</p>
+                    <div class="social-icons" style="gap: 15px;">
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+                            </svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products/bio-fungicide.html">Bio-Fungicide</a></li>
+                        <li><a href="products/eco-clean-soap.html">Eco-Clean Soap</a></li>
+                        <li><a href="products/amp-f-containers.html">AMP F Containers</a></li>
+                        <li><a href="products/botanical-skincare.html">Botanical Skincare</a></li>
+                        <li><a href="contact/index.html#bulk">Bulk Orders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about/index.html">About Us</a></li>
+                        <li><a href="impact/index.html">Our Impact</a></li>
+                        <li><a href="circular-economy/index.html">Circular Economy</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact/index.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="farmers/index.html">Farmer Resources</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p style="margin-top: 15px; font-size: 0.9rem; font-weight: 500;">info@potopia-egypt.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Potopia. All rights reserved.</p>
+                <p>Made with ♥ in El Sadat City, Egypt</p>
+                <p style="font-size: 0.8rem; margin-top: 10px;">Certified Organic Handler | ISO 14001 Environmental
+                    Management</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

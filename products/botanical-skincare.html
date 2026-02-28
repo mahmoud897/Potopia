@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanical Skincare | Potopia</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/products.js"></script>
+</head>
+
+<body style="padding-top: 80px;">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../assets/images/logo.png" alt="Potopia Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../about/index.html" class="nav-link">About Us</a></li>
+                <li><a href="index.html" class="nav-link active">Products</a></li>
+                <li><a href="../circular-economy/index.html" class="nav-link">Circular Economy</a></li>
+                <li><a href="../farmers/index.html" class="nav-link">Farmers Portal</a></li>
+                <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="../cart/index.html" class="nav-link cart-icon-wrapper">
+                        <svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge" id="header-cart-badge" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="section">
+        <div class="container fade-in">
+            <div class="text-center mb-3">
+                <span class="product-category-badge badge-gold"
+                    style="position: relative; top: 0; left: 0; display: inline-block; margin-bottom: 20px;">Premium
+                    Beauty</span>
+                <h1 style="color: var(--secondary-gold); font-size: 3rem;">Potopia Botanical Skincare</h1>
+                <p class="tagline" style="font-size: 1.25rem;">"Luxury ingredients born from agricultural innovation"
+                </p>
+                <p style="max-width: 800px; margin: 20px auto; font-size: 1.1rem;">The same nutrients that help potatoes
+                    grow strong in Egyptian soil—Vitamin C, Niacinamide, antioxidants—nourish your skin. We transform
+                    downgraded, non-exportable potatoes into premium beauty products.</p>
+            </div>
+
+            <div class="product-detail-layout" style="margin-top: 60px;">
+                <div class="product-detail-image">
+                    <img src="../assets/images/products/botanical-skincare.jpeg" alt="Botanical Skincare Line"
+                        style="border: 2px solid var(--secondary-gold);">
+                </div>
+
+                <div>
+                    <!-- Product 1 -->
+                    <div
+                        style="background: var(--bg-subtle); padding: 30px; border-radius: var(--radius-md); margin-bottom: 30px; border-left: 4px solid var(--secondary-gold);">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <h3 style="color: var(--secondary-gold);">Brightening Serum (30ml)</h3>
+                                <p style="font-weight: 700; color: var(--text-dark); margin-bottom: 10px;">280 EGP</p>
+                            </div>
+                            <button class="btn btn-secondary add-serum"
+                                style="padding: 8px 15px; font-size: 0.85rem;">Add to Cart</button>
+                        </div>
+                        <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>Key ingredient:</strong> 15%
+                            potato-derived Vitamin C</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>Benefits:</strong> Brightening,
+                            evening skin tone, antioxidant protection</p>
+                        <p style="font-size: 0.9rem;"><strong>Texture:</strong> Lightweight, fast-absorbing</p>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div
+                        style="background: var(--bg-subtle); padding: 30px; border-radius: var(--radius-md); margin-bottom: 30px; border-left: 4px solid var(--secondary-gold);">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <h3 style="color: var(--secondary-gold);">Nourishing Cream (50ml)</h3>
+                                <p style="font-weight: 700; color: var(--text-dark); margin-bottom: 10px;">320 EGP</p>
+                            </div>
+                            <button class="btn btn-secondary add-cream"
+                                style="padding: 8px 15px; font-size: 0.85rem;">Add to Cart</button>
+                        </div>
+                        <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>Key ingredient:</strong> Potato starch
+                            + natural oils</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>Benefits:</strong> Deep hydration,
+                            barrier repair, anti-inflammatory</p>
+                        <p style="font-size: 0.9rem;"><strong>Texture:</strong> Rich, non-greasy</p>
+                    </div>
+
+                    <!-- Complete Set -->
+                    <div
+                        style="background: rgba(212, 165, 116, 0.1); padding: 30px; border-radius: var(--radius-md); border: 2px dashed var(--secondary-gold); text-align: center;">
+                        <h4 style="color: var(--secondary-gold); margin-bottom: 10px;">Complete Routine Set</h4>
+                        <p style="margin-bottom: 15px;">Get both the Brightening Serum & Nourishing Cream for a 10%
+                            discount.</p>
+                        <p
+                            style="font-weight: 700; font-size: 1.25rem; color: var(--primary-green); margin-bottom: 15px;">
+                            540 EGP <span
+                                style="text-decoration: line-through; color: var(--text-muted); font-size: 0.9rem;">600
+                                EGP</span></p>
+                        <button class="btn btn-primary add-set" style="width: 100%;">Add Complete Set</button>
+                        <div style="margin-top: 15px; font-size: 0.85rem;">
+                            <label><input type="checkbox" id="gift-wrap"> Send as Gift (Includes luxury
+                                wrapping)</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philosophy & Routine -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 80px;">
+                <div>
+                    <h2 style="margin-bottom: 20px; color: var(--secondary-gold);">Ingredient Philosophy</h2>
+                    <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 15px;">Clean, Transparent, Effective
+                    </p>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 20px;">
+                        <span
+                            style="background: var(--bg-subtle); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">No
+                            silicones</span>
+                        <span
+                            style="background: var(--bg-subtle); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">No
+                            synthetic fragrances</span>
+                        <span
+                            style="background: var(--bg-subtle); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">No
+                            parabens</span>
+                        <span
+                            style="background: var(--bg-subtle); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Cruelty-free</span>
+                        <span
+                            style="background: var(--bg-subtle); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Vegan</span>
+                    </div>
+                    <p>We source directly from our own agricultural waste transformation facility in El Sadat City,
+                        giving us total control over purity and potency.</p>
+                </div>
+
+                <div
+                    style="background: var(--deep-forest); color: white; padding: 40px; border-radius: var(--radius-lg); text-align: center;">
+                    <h2 style="color: var(--secondary-gold);">Find Your Perfect Routine</h2>
+                    <p style="margin-bottom: 20px; opacity: 0.9;">Take our 2-minute quiz to discover how botanical
+                        ingredients can transform your unique skin type.</p>
+                    <button class="btn btn-secondary" onclick="alert('Routine Builder Quiz Feature Coming Soon!')">Start
+                        Routine Quiz</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JS for Add to Cart -->
+    <script>
+        document.querySelector('.add-serum').addEventListener('click', () => {
+            addToCart({
+                id: 'skincare_serum',
+                name: 'Brightening Serum (30ml)',
+                size: '30ml',
+                price: 280,
+                quantity: 1,
+                image: '../assets/images/products/botanical-skincare.jpeg'
+            });
+        });
+
+        document.querySelector('.add-cream').addEventListener('click', () => {
+            addToCart({
+                id: 'skincare_cream',
+                name: 'Nourishing Cream (50ml)',
+                size: '50ml',
+                price: 320,
+                quantity: 1,
+                image: '../assets/images/products/botanical-skincare.jpeg'
+            });
+        });
+
+        document.querySelector('.add-set').addEventListener('click', () => {
+            const isGift = document.getElementById('gift-wrap').checked;
+            addToCart({
+                id: 'skincare_set' + (isGift ? '_gift' : ''),
+                name: 'Botanical Routine Set' + (isGift ? ' (Gift Wrapped)' : ''),
+                size: 'Set',
+                price: 540,
+                quantity: 1,
+                image: '../assets/images/products/botanical-skincare.jpeg'
+            });
+        });
+    </script>
+
+    <!-- Footer Simplified -->
+    <footer class="footer" style="margin-top: 0;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Potopia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

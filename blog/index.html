@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insights | Potopia</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <!-- Scripts -->
+    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/main.js"></script>
+</head>
+
+<body style="padding-top: 80px;">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../assets/images/logo.png" alt="Potopia Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../about/index.html" class="nav-link">About Us</a></li>
+                <li><a href="../products/index.html" class="nav-link">Products</a></li>
+                <li><a href="../circular-economy/index.html" class="nav-link">Circular Economy</a></li>
+                <li><a href="../farmers/index.html" class="nav-link">Farmers Portal</a></li>
+                <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="../cart/index.html" class="nav-link cart-icon-wrapper">
+                        <svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="section section-bg-light text-center">
+        <div class="container fade-in">
+            <h1 style="color: var(--primary-green); font-size: 3rem; margin-bottom: 20px;">Agricultural Insights</h1>
+            <p style="font-size: 1.25rem;">Knowledge sharing for a sustainable future.</p>
+        </div>
+    </section>
+
+    <!-- Layout -->
+    <section class="section">
+        <div class="container fade-in">
+            <div style="display: grid; grid-template-columns: 3fr 1fr; gap: 40px;">
+
+                <!-- Main Articles Feed -->
+                <div>
+                    <!-- Featured Article -->
+                    <article
+                        style="background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); overflow: hidden; margin-bottom: 40px; border: 1px solid rgba(0,0,0,0.05);">
+                        <div
+                            style="height: 300px; background: var(--bg-subtle) var(--primary-green) center/cover;">
+                        </div>
+                        <div style="padding: 30px;">
+                            <span
+                                style="color: var(--secondary-gold); font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Farming
+                                Tips</span>
+                            <h2 style="margin: 10px 0;">Understanding Potato Brown Rot: Identification and Prevention
+                            </h2>
+                            <p style="color: var(--text-muted); margin-bottom: 20px;">Brown rot is a devastating
+                                bacterial wilt disease. Learn the early visual indicators on foliage and cross-sections
+                                of tubers to act quickly and accurately.</p>
+                            <a href="#" class="btn btn-outline" style="padding: 8px 15px; font-size: 0.85rem;">Read
+                                Article</a>
+                        </div>
+                    </article>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                        <!-- Article 2 -->
+                        <article
+                            style="background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); overflow: hidden; border: 1px solid rgba(0,0,0,0.05);">
+                            <div style="height: 180px; background: var(--bg-subtle);"></div>
+                            <div style="padding: 20px;">
+                                <span
+                                    style="color: var(--secondary-gold); font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Sustainability</span>
+                                <h3 style="margin: 10px 0; font-size: 1.2rem;">The Rise of the Circular Economy</h3>
+                                <a href="#" style="font-weight: 600;">Read More →</a>
+                            </div>
+                        </article>
+
+                        <!-- Article 3 -->
+                        <article
+                            style="background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); overflow: hidden; border: 1px solid rgba(0,0,0,0.05);">
+                            <div style="height: 180px; background: var(--bg-subtle);"></div>
+                            <div style="padding: 20px;">
+                                <span
+                                    style="color: var(--secondary-gold); font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Product
+                                    News</span>
+                                <h3 style="margin: 10px 0; font-size: 1.2rem;">AMP-F Containers Get IoT Upgrade</h3>
+                                <a href="#" style="font-weight: 600;">Read More →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div>
+                    <div
+                        style="background: var(--bg-subtle); padding: 25px; border-radius: var(--radius-md); margin-bottom: 30px;">
+                        <h4 style="margin-bottom: 15px;">Categories</h4>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 10px;"><a href="#" style="color: var(--text-dark);">Farming Tips
+                                    (12)</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#" style="color: var(--text-dark);">Sustainability
+                                    (8)</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#" style="color: var(--text-dark);">Product News
+                                    (4)</a></li>
+                            <li style="margin-bottom: 10px;"><a href="#" style="color: var(--text-dark);">Farmer Stories
+                                    (6)</a></li>
+                        </ul>
+                    </div>
+
+                    <div
+                        style="background: var(--deep-forest); color: white; padding: 25px; border-radius: var(--radius-md); text-align: center;">
+                        <h4 style="color: var(--secondary-gold); margin-bottom: 15px;">Subscribe</h4>
+                        <p style="font-size: 0.85rem; margin-bottom: 15px;">Get the latest insights delivered weekly.
+                        </p>
+                        <input type="email" placeholder="Your email" class="form-control" style="margin-bottom: 10px;">
+                        <button class="btn btn-secondary" style="width: 100%; padding: 8px;">Sign Up</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simplified -->
+    <footer class="footer" style="margin-top: 0;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Potopia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

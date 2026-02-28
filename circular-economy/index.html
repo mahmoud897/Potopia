@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Economy | Potopia</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <!-- Scripts -->
+    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <style>
+        .circle-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .loop-step {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+        }
+
+        .loop-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step-icon {
+            width: 140px;
+            height: 140px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 4px solid var(--primary-green);
+            position: relative;
+            font-size: 3rem;
+            color: var(--primary-green);
+            transition: transform 0.3s ease;
+        }
+
+        .loop-step:hover .step-icon {
+            transform: scale(1.1) rotate(10deg);
+            border-color: var(--secondary-gold);
+            color: var(--secondary-gold);
+        }
+
+        .step-content {
+            width: calc(100% - 200px);
+            background: var(--bg-subtle);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .loop-step:hover .step-content {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-5px);
+            background: white;
+        }
+
+        .step-content h3 {
+            color: var(--deep-forest);
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        /* The connecting dashed line */
+        .circle-container::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            bottom: 40px;
+            left: 50%;
+            width: 4px;
+            background-image: linear-gradient(to bottom, var(--primary-green) 50%, transparent 50%);
+            background-size: 4px 20px;
+            transform: translateX(-50%);
+            z-index: 1;
+            animation: moveDash 2s linear infinite;
+        }
+
+        @keyframes moveDash {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 0 40px;
+            }
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px 20px;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .pulse-circle {
+            animation: pulse-ring 2s infinite;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(45, 90, 61, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(45, 90, 61, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(45, 90, 61, 0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .circle-container::before {
+                left: 70px;
+            }
+
+            .loop-step,
+            .loop-step:nth-child(even) {
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+
+            .step-icon {
+                width: 100px;
+                height: 100px;
+                font-size: 2rem;
+                flex-shrink: 0;
+            }
+
+            .step-content {
+                width: calc(100% - 120px);
+                padding: 20px;
+            }
+
+            .step-content h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body style="padding-top: 80px;">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../assets/images/logo.png" alt="Potopia Logo" style="height: 80px;">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../about/index.html" class="nav-link">About Us</a></li>
+                <li><a href="../products/index.html" class="nav-link">Products</a></li>
+                <li><a href="index.html" class="nav-link active">Circular Economy</a></li>
+                <li><a href="../farmers/index.html" class="nav-link">Farmers Portal</a></li>
+                <li><a href="../contact/index.html" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="../cart/index.html" class="nav-link cart-icon-wrapper">
+                        <svg class="cart-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero"
+        style="background: linear-gradient(135deg, var(--primary-green), var(--deep-forest)); padding: 120px 0; color: white; text-align: center; position: relative; overflow: hidden;">
+        <!-- Leaf decoration pattern background -->
+        <div
+            style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: radial-gradient(#fff 2px, transparent 2px); background-size: 30px 30px;">
+        </div>
+
+        <div class="container fade-in" style="position: relative; z-index: 2;">
+            <div
+                style="display: inline-block; padding: 10px 20px; background: rgba(255,255,255,0.2); border-radius: 30px; margin-bottom: 20px; font-weight: 600; letter-spacing: 2px;">
+                THE POTOPIA METHOD</div>
+            <h1
+                style="color: var(--secondary-gold); font-size: 4.5rem; margin-bottom: 20px; font-family: var(--font-accent);">
+                A Zero-Waste Utopia</h1>
+            <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.9);">Nature doesn't
+                create waste. Neither do we.</p>
+        </div>
+    </header>
+
+    <!-- Interactive Infographic Area -->
+    <section class="section" style="background: linear-gradient(to bottom, #fff, var(--bg-subtle));">
+        <div class="container fade-in">
+            <div class="text-center mb-3">
+                <h2 style="font-size: 2.5rem; color: var(--primary-green);">The Closed-Loop Cycle</h2>
+                <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Follow the journey of a potato from the
+                    moment it leaves the farm to its rebirth as premium consumer products and protective agricultural
+                    tools.</p>
+            </div>
+
+            <div class="circle-container">
+                <!-- Step 1 -->
+                <div class="loop-step">
+                    <div class="step-icon pulse-circle">
+                        🚜
+                    </div>
+                    <div class="step-content">
+                        <span
+                            style="font-weight: 700; color: var(--secondary-gold); text-transform: uppercase; font-size: 0.9rem;">Step
+                            01 / Sourcing</span>
+                        <h3>Salvaging Value</h3>
+                        <p>We work directly with Menoufia farmers, collecting downgraded potatoes, peels, and
+                            agricultural waste that would typically rot in landfills and emit harmful methane gas.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="loop-step">
+                    <div class="step-icon">
+                        ⚙️
+                    </div>
+                    <div class="step-content">
+                        <span
+                            style="font-weight: 700; color: var(--secondary-gold); text-transform: uppercase; font-size: 0.9rem;">Step
+                            02 / The El Sadat Facility</span>
+                        <h3>Smart Processing</h3>
+                        <p>In our advanced 3-Zone facility, heavy processing directs peels towards industrial chemistry
+                            (saponification and PLA bio-molding), while nutrient-rich strata head to our GMP cleanroom.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="loop-step">
+                    <div class="step-icon">
+                        ✨
+                    </div>
+                    <div class="step-content">
+                        <span
+                            style="font-weight: 700; color: var(--secondary-gold); text-transform: uppercase; font-size: 0.9rem;">Step
+                            03 / Transformation</span>
+                        <h3>Product Creation</h3>
+                        <p>Waste is transformed into valuable market goods: Eco-Clean Liquid Soap, Botanical Skincare
+                            packed with Vitamin C, and robust AMP-F Antibacterial Storage Containers.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="loop-step">
+                    <div class="step-icon pulse-circle"
+                        style="border-color: var(--secondary-gold); color: var(--secondary-gold);">
+                        🌱
+                    </div>
+                    <div class="step-content">
+                        <span
+                            style="font-weight: 700; color: var(--primary-green); text-transform: uppercase; font-size: 0.9rem;">Step
+                            04 / Reinvestment</span>
+                        <h3>Back to the Soil</h3>
+                        <p>The revenues and the physical products (like AMP-F containers and Bio-fungicides) are
+                            funneled right back to the farmers at subsidized rates, ensuring their next harvest is
+                            flawless.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Impact Dashboard -->
+    <section class="section" style="background: var(--deep-forest); color: white; position: relative;">
+        <!-- decorative background -->
+        <div
+            style="position: absolute; right: 0; bottom: 0; width: 400px; height: 400px; background: radial-gradient(circle, var(--primary-green) 0%, transparent 70%); opacity: 0.5;">
+        </div>
+
+        <div class="container fade-in text-center" style="position: relative; z-index: 2;">
+            <h2 style="color: var(--secondary-gold); font-size: 2.5rem; margin-bottom: 20px;">Live Environmental Impact
+            </h2>
+            <p
+                style="margin-bottom: 60px; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.8);">
+                Every purchase you make directly accelerates these numbers. Watch our impact grow in real-time.</p>
+
+            <div class="dashboard-grid">
+                <div class="stat-card">
+                    <div style="font-size: 4rem; margin-bottom: 10px;">🥔</div>
+                    <div id="counter1"
+                        style="font-size: 3.5rem; font-weight: 700; line-height: 1; margin-bottom: 10px; font-family: var(--font-heading);">
+                        28.50</div>
+                    <p
+                        style="color: var(--secondary-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">
+                        Tons Upcycled This Month</p>
+                </div>
+
+                <div class="stat-card">
+                    <div style="font-size: 4rem; margin-bottom: 10px;">🛡️</div>
+                    <div id="counter2"
+                        style="font-size: 3.5rem; font-weight: 700; line-height: 1; margin-bottom: 10px; font-family: var(--font-heading);">
+                        142</div>
+                    <p
+                        style="color: var(--secondary-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">
+                        Farmers Protected</p>
+                </div>
+
+                <div class="stat-card">
+                    <div style="font-size: 4rem; margin-bottom: 10px;">☁️</div>
+                    <div id="counter3"
+                        style="font-size: 3.5rem; font-weight: 700; line-height: 1; margin-bottom: 10px; font-family: var(--font-heading);">
+                        57.00</div>
+                    <p
+                        style="color: var(--secondary-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">
+                        CO₂ Tons Prevented</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple script to animate numbers -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let c1 = 28.50;
+            let c3 = 57.00;
+
+            setInterval(() => {
+                c1 += 0.01;
+                c3 += 0.02;
+                document.getElementById('counter1').textContent = c1.toFixed(2);
+                document.getElementById('counter3').textContent = c3.toFixed(2);
+            }, 3000);
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 0;">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Potopia. All rights reserved.</p>
+                <p>Made with ♥ in El Sadat City, Egypt</p>
+                <p style="font-size: 0.8rem; margin-top: 10px;">Certified Organic Handler | ISO 14001 Environmental
+                    Management</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
